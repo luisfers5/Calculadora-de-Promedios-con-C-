@@ -1,0 +1,7 @@
+C:\Users\luisf\source\repos\Calculadora de Promedios con C#\Calculadora de Promedios con C#\bin\Debug\Calculadora de Promedios con C#.exe.config
+C:\Users\luisf\source\repos\Calculadora de Promedios con C#\Calculadora de Promedios con C#\bin\Debug\Calculadora de Promedios con C#.exe
+C:\Users\luisf\source\repos\Calculadora de Promedios con C#\Calculadora de Promedios con C#\bin\Debug\Calculadora de Promedios con C#.pdb
+C:\Users\luisf\source\repos\Calculadora de Promedios con C#\Calculadora de Promedios con C#\obj\Debug\Calculadora de Promedios con C#.csproj.AssemblyReference.cache
+C:\Users\luisf\source\repos\Calculadora de Promedios con C#\Calculadora de Promedios con C#\obj\Debug\Calculadora de Promedios con C#.csproj.CoreCompileInputs.cache
+C:\Users\luisf\source\repos\Calculadora de Promedios con C#\Calculadora de Promedios con C#\obj\Debug\Calculadora de Promedios con C#.exe
+C:\Users\luisf\source\repos\Calculadora de Promedios con C#\Calculadora de Promedios con C#\obj\Debug\Calculadora de Promedios con C#.pdb
