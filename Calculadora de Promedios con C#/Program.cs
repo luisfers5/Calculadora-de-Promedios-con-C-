@@ -13,31 +13,54 @@ namespace Calculadora_de_Promedios_con_C_
             int contador  = 0;
             string valorIngresado = "0";
             double calificacion = 0;
+            double sumaDeCalificaciones = 0;
 
             Console.WriteLine("Bienvendio al programa 'Promediador'\nPor favor ingrese el nombre del alumno");
             alumno = Console.ReadLine();
-            Console.Clear();
-            Console.WriteLine($"Gracias, ahora vamos a ingresar las calificaciones de {alumno}");
-            Console.WriteLine("Puede ingresar la calificacion y presionar enter, o terminar escribiendo 'fin'");
+            
+            
 
-            valorIngresado = Console.ReadLine().ToLower();
-
-
-            if (!valorIngresado.Equals("fin"))
+            while (!valorIngresado.Equals("fin"))
             {
-                Console.Clear();
-                Console.WriteLine($"Ha terminado el calculo, la calificacion de {alumno} es {promedio}");
+                Console.WriteLine($"Gracias, ahora vamos a ingresar la siguiente calificacione de {alumno}");
+                Console.WriteLine("Puede ingresar la calificacion y presionar enter, o terminar escribiendo 'fin'");
+
+                valorIngresado = Console.ReadLine().ToLower();
+
+
+                if (valorIngresado.Equals("fin"))
+                {
+                    Console.Clear();
+                    Console.WriteLine($"Ha terminado el calculo, la calificacion de {alumno} es {promedio}");
+                }
+
+
+                if (double.TryParse(valorIngresado, out calificacion) && calificacion >= 0 && calificacion <= 10)
+                {
+                    Console.Clear();
+                    sumaDeCalificaciones = sumaDeCalificaciones + calificacion;
+                    contador += 1;
+                    promedio = sumaDeCalificaciones / contador;
+                    Console.WriteLine($"Se han ingresado {contador} calificaciones.");
+
+                }
+                else
+                {
+                    if (!(valorIngresado.Equals("fin")))
+                    {
+                        Console.Clear();
+                        Console.WriteLine($"Se han ingresado {contador} calificaciones.");
+                        Console.WriteLine("El valor ingresado no se registro, por favor solo ingrese numero entre 0 y 10 o escirba 'fin' para salir y entregar el promedio");
+                        
+                    }
+                    continue; 
+                    
+                }
+                continue;
+
+
             }
-
-
-            if (double.TryParse(valorIngresado, out calificacion))
-            {
-
-            }
-
-
-
-
+            
 
 
             Console.Read();
